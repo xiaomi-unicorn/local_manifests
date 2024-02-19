@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="cupid"
+           fetch="https://github.com"/>
+
   <remote  name="unicorn"
-           fetch="https://github.com"
-           revision="lineage-20" />
-           
-  <project name="xiaomi-unicorn/device_xiaomi_unicorn" path="device/xiaomi/unicorn" remote="unicorn"/>
-  <project name="xiaomi-unicorn/vendor_xiaomi_unicorn" path="vendor/xiaomi/unicorn" remote="unicorn"/>
-  <project name="xiaomi-unicorn/patches" path="patches" remote="unicorn"/>
-  <project name="xiaomi-unicorn/vendor_xiaomi_unicorn_images" path="vendor/xiaomi/unicorn/images" remote="unicorn"/>
-  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-20"/>
+           fetch="https://github.com"/>
+
+  <project name="cupid-development/android_kernel_xiaomi_sm8450" path="kernel/xiaomi/sm8450" remote="cupid" revision="mondrian"/>
+  <project name="cupid-development/android_kernel_xiaomi_sm8450-modules" path="kernel/xiaomi/sm8450-modules" remote="cupid" revision="mondrian"/>
+  <project name="cupid-development/android_kernel_xiaomi_sm8450-devicetrees" path="kernel/xiaomi/sm8450-devicetrees" remote="cupid" revision="mondrian"/>
+  <project name="cupid-development/android_device_xiaomi_unicorn" path="device/xiaomi/unicorn" remote="cupid" revision="lineage-20"/>
+  <project name="cupid-development/android_device_xiaomi_sm8450-common" path="device/xiaomi/sm8450-common" remote="cupid" revision="mondrian"/>
+  <project name="cupid-development/android_hardware_xiaomi" path="hardware/xiaomi" remote="cupid" revision="lineage-20"/>
+
+  <project name="xiaomi-unicorn/android_vendor_xiaomi" path="vendor/xiaomi" remote="unicorn" revision="lineage-20.0"/>
 </manifest>
 
